@@ -1,0 +1,294 @@
+body{
+    background-color:beige;
+    margin: 0 0 55px 0;
+}
+header{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: rgb(49, 83, 41);
+    z-index: 5;
+    overflow-x: auto; 
+}
+.nav-link{
+    display: flex;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 17 px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: rgb(251, 255, 249);
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.link__1{
+    font-size: 28px;
+    border-width: 3px;
+    box-shadow: 0px 14px 16px #0000008c;
+    background-color: rgb(35, 141, 62);
+}
+.logo__imagen {
+    width: 20vw;
+    height: auto;
+    position: fixed;
+    margin-top: 0;
+    margin: 0;
+    right: 0;
+    padding: 0;
+    z-index: 10;}
+img, ul{
+    margin: 0;
+    padding: 0;
+}
+
+.articulo__imagen {
+    width:100%;
+    height: 100%;
+    
+}
+ 
+
+.carrusel__img{
+    width: 100%;
+    overflow: scroll;
+}
+
+.carrusel__img ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 20s infinite ease-in-out;
+}
+
+.carrusel__img li{
+    width: 100%;
+    list-style: none;
+    position:relative;
+}
+
+.carrusel__img img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+    
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+
+
+}
+
+.main__title{
+    font-size: 30px;
+    margin-bottom: 0;
+    background-color: beige;
+    width: 100vw;
+
+}
+.main__title h2{
+    margin: 15px;
+}
+.subtitle{
+    background-color: rgb(94, 153, 91);
+}
+.subtitle h3{
+    font-size: 25px;
+    margin-top: 0px;
+    margin: 15px;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-top: 0;
+    font-size: 20px;
+}   
+.list{
+    margin: 25px;
+}
+
+.descripcion button{
+    background-color: rgb(81, 165, 55);
+    padding: 20px 3px;
+    font-size: 30px;
+    box-shadow: 0px 14px 16px #0000008c;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    text-transform: none;
+}
+
+button:hover{
+    background-color: rgb(125, 236, 227);
+    color: #000000;
+}
+footer{
+    display: flex;
+    background-image: url('https://images.unsplash.com/flagged/photo-1560177776-295b9cd779de?q=80&w=1402&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+     /* Centra la imagen */
+    height: 100%; 
+    margin: 0;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    text-decoration: none;
+    padding: 4%; 
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.footer__titles{
+    text-align: center;
+}
+
+.footer__container{
+    text-align: justify;
+    width: 100%;
+}
+.sobre__nosotros, .contacto{
+    background-color: rgb(37, 31, 31, 0.5);
+    width: 100%;
+}
+
+.copy__right{
+font-size:15px  ;
+margin-bottom: 15px;
+}
+
+.grid-container{
+    display: none;
+}
+@media (min-width: 768px){
+    header, .logo__esquina, .carrusel__img, nav, .inicio, footer{
+        display:none;
+        }
+    .grid-container{
+        background-image: url('https://images.unsplash.com/flagged/photo-1560177776-295b9cd779de?q=80&w=1402&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        background-size: cover; 
+        position: absolute;
+        width: 100vw;
+        height: 100vh; 
+        margin: 0;
+        display: grid;
+        grid-template-rows: 100px 200px; /* Dos filas de 100px y 200px de altura */
+        grid-template-columns: 2fr 3fr;
+        
+    }
+    .logo{
+        height: 55vh;
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 17%;    
+    }
+    
+    .desk{
+        height: 55vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 10%;
+        overflow: hidden;
+        padding: 0;
+    }
+    
+    .alerta{
+        height: 250px;
+        width: 250px;
+        background-color: #101010;
+        border-radius: 10%;
+        box-shadow: 16px 14px 20px #0000008c;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        
+    }
+    
+    .alerta::before{
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 350px;
+        background-image: conic-gradient(rgba(35, 65, 16, 0.87) 50deg, transparent 360deg);
+        animation: rotar 2s linear infinite;
+    }
+    
+    @keyframes rotar {
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+    
+    .alerta::after{
+        content: "";
+        position: absolute;
+        height: 220px;
+        width: 220px;
+        background-color:#101010;
+        border-radius: 10%;
+        box-shadow: inset 18px 16px 20px #0000008c;
+    }
+    
+    h2{
+        font-family:'Times New Roman', Times, serif;
+        font-size: 25px;
+        width: 50%;
+        margin: auto;
+        color:rgb(240, 250, 250);
+        z-index: 2;
+    }
+    
+    #cliente{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        width: 50%;
+        margin: auto;
+        color:rgb(28, 126, 15);
+        z-index: 2;
+    }
+    
+    #pagina{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        width: 50%;
+        margin: auto;
+        color:rgb(28, 126, 15);
+        z-index: 2; 
+    }
+}
