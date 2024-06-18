@@ -1,7 +1,6 @@
 body{
     background-color:beige;
-    margin: 0 0 55px 0;
-}
+    margin: 0 0 55px 0;}
 header{
     position: fixed;
     bottom: 0;
@@ -144,8 +143,7 @@ img, ul{
 }
 a{
     text-decoration: none;
-    text-transform: none;
-}
+    color: inherit;}
 
 button:hover{
     background-color: rgb(125, 236, 227);
@@ -190,7 +188,7 @@ margin-bottom: 15px;
     display: none;
 }
 @media (min-width: 768px){
-    header, .logo__esquina, .carrusel__img, nav, .inicio, footer{
+    header, .logo__esquina, .carrusel__img, nav, .inicio, .main__title, footer, .descripcion  {
         display:none;
         }
     .grid-container{
